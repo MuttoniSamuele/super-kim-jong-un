@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6833276335317839380}
   - component: {fileID: 6833276335317839387}
   m_Layer: 0
-  m_Name: Country
+  m_Name: Zone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -123,10 +123,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d276248fad6b92b4180dfc5d6ee2e4bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  zoneName: 
+  threatLevel: 0
   unlockedColor: {r: 0.45, g: 0.45, b: 0.45, a: 1}
   lockedColor: {r: 0.25, g: 0.25, b: 0.25, a: 1}
   hoverColor: {r: 0.7, g: 0.7, b: 0.7, a: 1}
   selectColor: {r: 0.85, g: 0.85, b: 0.85, a: 1}
   isLocked: 1
-  isCompleted: 0
   neighbourZones: []
+  zoneModal: {fileID: 0}

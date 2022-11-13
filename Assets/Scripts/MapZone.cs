@@ -3,14 +3,17 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class MapZone : MonoBehaviour {
+	public string zoneName;
+	[Range(1, 5)] public int threatLevel;
 	[SerializeField] private Color unlockedColor;
 	[SerializeField] private Color lockedColor;
 	[SerializeField] private Color hoverColor;
 	[SerializeField] private Color selectColor;
-	[SerializeField] public bool isLocked;
-	[SerializeField] public bool isCompleted = false;
+	public bool isLocked;
 	[SerializeField] private MapZone[] neighbourZones;
+	[SerializeField] private ZoneModal zoneModal;
 
+	[HideInInspector] public bool isCompleted = false;
 	private SpriteRenderer spriteRenderer;
 	private bool isHovered = false;
 	private bool isClicked = false;
@@ -21,6 +24,9 @@ public class MapZone : MonoBehaviour {
 	}
 
     void Update() {
+		if (zoneModal.isOpen) {
+			return;
+		}
 		if (isCompleted) {
 			foreach (MapZone zone in neighbourZones) {
 				if (zone) {
@@ -28,9 +34,13 @@ public class MapZone : MonoBehaviour {
 				}
 			}
 		}
-
 		if (isHovered) {
-			spriteRenderer.color = isClicked ? selectColor : hoverColor;
+			if (isClicked) {
+				spriteRenderer.color = selectColor;
+				zoneModal.OpenModal(this, neighbourZones);
+			} else {
+				spriteRenderer.color = hoverColor;
+			}
 		} else {
 			spriteRenderer.color = isLocked ? lockedColor : unlockedColor;
 		}
@@ -45,6 +55,9 @@ public class MapZone : MonoBehaviour {
 	}
 
 	private void OnMouseDown() {
+		if (zoneModal.isOpen) {
+			return;
+		}
 		isClicked = true;
 	}
 
