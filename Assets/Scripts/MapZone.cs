@@ -5,6 +5,7 @@ using UnityEngine;
 public class MapZone : MonoBehaviour {
 	public string zoneName;
 	[Range(1, 5)] public int threatLevel;
+	[SerializeField] private Color completedColor;
 	[SerializeField] private Color unlockedColor;
 	[SerializeField] private Color lockedColor;
 	[SerializeField] private Color hoverColor;
@@ -42,7 +43,7 @@ public class MapZone : MonoBehaviour {
 				spriteRenderer.color = hoverColor;
 			}
 		} else {
-			spriteRenderer.color = isLocked ? lockedColor : unlockedColor;
+			spriteRenderer.color = isLocked ? lockedColor : (isCompleted ? completedColor : unlockedColor);
 		}
 	}
 
