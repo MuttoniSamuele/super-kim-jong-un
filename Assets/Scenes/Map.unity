@@ -1313,6 +1313,11 @@ PrefabInstance:
       objectReference: {fileID: 491783575}
     - target: {fileID: 6833276335317839387, guid: c426a7dfb7679694bbcf16c6d79fe46b,
         type: 3}
+      propertyPath: threatLevel
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6833276335317839387, guid: c426a7dfb7679694bbcf16c6d79fe46b,
+        type: 3}
       propertyPath: neighbourZones.Array.size
       value: 5
       objectReference: {fileID: 0}
@@ -2157,6 +2162,11 @@ PrefabInstance:
       propertyPath: zoneModal
       value: 
       objectReference: {fileID: 491783575}
+    - target: {fileID: 6833276335317839387, guid: c426a7dfb7679694bbcf16c6d79fe46b,
+        type: 3}
+      propertyPath: threatLevel
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 6833276335317839387, guid: c426a7dfb7679694bbcf16c6d79fe46b,
         type: 3}
       propertyPath: neighbourZones.Array.size
@@ -3126,6 +3136,11 @@ PrefabInstance:
       propertyPath: zoneModal
       value: 
       objectReference: {fileID: 491783575}
+    - target: {fileID: 6833276335317839387, guid: c426a7dfb7679694bbcf16c6d79fe46b,
+        type: 3}
+      propertyPath: threatLevel
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6833276335317839387, guid: c426a7dfb7679694bbcf16c6d79fe46b,
         type: 3}
       propertyPath: neighbourZones.Array.size
@@ -4440,6 +4455,11 @@ PrefabInstance:
       objectReference: {fileID: 491783575}
     - target: {fileID: 6833276335317839387, guid: c426a7dfb7679694bbcf16c6d79fe46b,
         type: 3}
+      propertyPath: threatLevel
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6833276335317839387, guid: c426a7dfb7679694bbcf16c6d79fe46b,
+        type: 3}
       propertyPath: neighbourZones.Array.size
       value: 6
       objectReference: {fileID: 0}
@@ -5700,6 +5720,11 @@ PrefabInstance:
       objectReference: {fileID: 491783575}
     - target: {fileID: 6833276335317839387, guid: c426a7dfb7679694bbcf16c6d79fe46b,
         type: 3}
+      propertyPath: threatLevel
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6833276335317839387, guid: c426a7dfb7679694bbcf16c6d79fe46b,
+        type: 3}
       propertyPath: neighbourZones.Array.size
       value: 5
       objectReference: {fileID: 0}
@@ -6938,6 +6963,11 @@ PrefabInstance:
       objectReference: {fileID: 491783575}
     - target: {fileID: 6833276335317839387, guid: c426a7dfb7679694bbcf16c6d79fe46b,
         type: 3}
+      propertyPath: threatLevel
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6833276335317839387, guid: c426a7dfb7679694bbcf16c6d79fe46b,
+        type: 3}
       propertyPath: neighbourZones.Array.size
       value: 4
       objectReference: {fileID: 0}
@@ -7842,7 +7872,7 @@ PrefabInstance:
     - target: {fileID: 6833276335317839387, guid: c426a7dfb7679694bbcf16c6d79fe46b,
         type: 3}
       propertyPath: threatLevel
-      value: 2
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6833276335317839387, guid: c426a7dfb7679694bbcf16c6d79fe46b,
         type: 3}
@@ -9059,6 +9089,11 @@ PrefabInstance:
       propertyPath: zoneModal
       value: 
       objectReference: {fileID: 491783575}
+    - target: {fileID: 6833276335317839387, guid: c426a7dfb7679694bbcf16c6d79fe46b,
+        type: 3}
+      propertyPath: threatLevel
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 6833276335317839387, guid: c426a7dfb7679694bbcf16c6d79fe46b,
         type: 3}
       propertyPath: neighbourZones.Array.size
@@ -11019,6 +11054,11 @@ PrefabInstance:
       objectReference: {fileID: 491783575}
     - target: {fileID: 6833276335317839387, guid: c426a7dfb7679694bbcf16c6d79fe46b,
         type: 3}
+      propertyPath: threatLevel
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6833276335317839387, guid: c426a7dfb7679694bbcf16c6d79fe46b,
+        type: 3}
       propertyPath: neighbourZones.Array.size
       value: 3
       objectReference: {fileID: 0}
@@ -12229,6 +12269,11 @@ PrefabInstance:
       objectReference: {fileID: 491783575}
     - target: {fileID: 6833276335317839387, guid: c426a7dfb7679694bbcf16c6d79fe46b,
         type: 3}
+      propertyPath: threatLevel
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6833276335317839387, guid: c426a7dfb7679694bbcf16c6d79fe46b,
+        type: 3}
       propertyPath: neighbourZones.Array.size
       value: 3
       objectReference: {fileID: 0}
@@ -12887,6 +12932,11 @@ PrefabInstance:
       propertyPath: zoneModal
       value: 
       objectReference: {fileID: 491783575}
+    - target: {fileID: 6833276335317839387, guid: c426a7dfb7679694bbcf16c6d79fe46b,
+        type: 3}
+      propertyPath: threatLevel
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 6833276335317839387, guid: c426a7dfb7679694bbcf16c6d79fe46b,
         type: 3}
       propertyPath: neighbourZones.Array.size
@@ -14104,6 +14154,11 @@ PrefabInstance:
       objectReference: {fileID: 491783575}
     - target: {fileID: 6833276335317839387, guid: c426a7dfb7679694bbcf16c6d79fe46b,
         type: 3}
+      propertyPath: threatLevel
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6833276335317839387, guid: c426a7dfb7679694bbcf16c6d79fe46b,
+        type: 3}
       propertyPath: neighbourZones.Array.size
       value: 3
       objectReference: {fileID: 0}
@@ -15185,6 +15240,11 @@ PrefabInstance:
       objectReference: {fileID: 491783575}
     - target: {fileID: 6833276335317839387, guid: c426a7dfb7679694bbcf16c6d79fe46b,
         type: 3}
+      propertyPath: threatLevel
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6833276335317839387, guid: c426a7dfb7679694bbcf16c6d79fe46b,
+        type: 3}
       propertyPath: neighbourZones.Array.size
       value: 5
       objectReference: {fileID: 0}
@@ -16082,6 +16142,11 @@ PrefabInstance:
       objectReference: {fileID: 491783575}
     - target: {fileID: 6833276335317839387, guid: c426a7dfb7679694bbcf16c6d79fe46b,
         type: 3}
+      propertyPath: threatLevel
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6833276335317839387, guid: c426a7dfb7679694bbcf16c6d79fe46b,
+        type: 3}
       propertyPath: neighbourZones.Array.size
       value: 3
       objectReference: {fileID: 0}
@@ -16958,6 +17023,11 @@ PrefabInstance:
       propertyPath: zoneModal
       value: 
       objectReference: {fileID: 491783575}
+    - target: {fileID: 6833276335317839387, guid: c426a7dfb7679694bbcf16c6d79fe46b,
+        type: 3}
+      propertyPath: threatLevel
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 6833276335317839387, guid: c426a7dfb7679694bbcf16c6d79fe46b,
         type: 3}
       propertyPath: neighbourZones.Array.size
@@ -18262,6 +18332,11 @@ PrefabInstance:
       objectReference: {fileID: 491783575}
     - target: {fileID: 6833276335317839387, guid: c426a7dfb7679694bbcf16c6d79fe46b,
         type: 3}
+      propertyPath: threatLevel
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6833276335317839387, guid: c426a7dfb7679694bbcf16c6d79fe46b,
+        type: 3}
       propertyPath: neighbourZones.Array.size
       value: 3
       objectReference: {fileID: 0}
@@ -18925,6 +19000,11 @@ PrefabInstance:
       propertyPath: zoneModal
       value: 
       objectReference: {fileID: 491783575}
+    - target: {fileID: 6833276335317839387, guid: c426a7dfb7679694bbcf16c6d79fe46b,
+        type: 3}
+      propertyPath: threatLevel
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 6833276335317839387, guid: c426a7dfb7679694bbcf16c6d79fe46b,
         type: 3}
       propertyPath: neighbourZones.Array.size
@@ -20135,6 +20215,11 @@ PrefabInstance:
       propertyPath: zoneModal
       value: 
       objectReference: {fileID: 491783575}
+    - target: {fileID: 6833276335317839387, guid: c426a7dfb7679694bbcf16c6d79fe46b,
+        type: 3}
+      propertyPath: threatLevel
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 6833276335317839387, guid: c426a7dfb7679694bbcf16c6d79fe46b,
         type: 3}
       propertyPath: neighbourZones.Array.size
@@ -22006,6 +22091,11 @@ PrefabInstance:
       objectReference: {fileID: 491783575}
     - target: {fileID: 6833276335317839387, guid: c426a7dfb7679694bbcf16c6d79fe46b,
         type: 3}
+      propertyPath: threatLevel
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6833276335317839387, guid: c426a7dfb7679694bbcf16c6d79fe46b,
+        type: 3}
       propertyPath: neighbourZones.Array.size
       value: 2
       objectReference: {fileID: 0}
@@ -23390,6 +23480,11 @@ PrefabInstance:
       objectReference: {fileID: 491783575}
     - target: {fileID: 6833276335317839387, guid: c426a7dfb7679694bbcf16c6d79fe46b,
         type: 3}
+      propertyPath: threatLevel
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6833276335317839387, guid: c426a7dfb7679694bbcf16c6d79fe46b,
+        type: 3}
       propertyPath: neighbourZones.Array.size
       value: 6
       objectReference: {fileID: 0}
@@ -24053,6 +24148,11 @@ PrefabInstance:
       propertyPath: zoneModal
       value: 
       objectReference: {fileID: 491783575}
+    - target: {fileID: 6833276335317839387, guid: c426a7dfb7679694bbcf16c6d79fe46b,
+        type: 3}
+      propertyPath: threatLevel
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 6833276335317839387, guid: c426a7dfb7679694bbcf16c6d79fe46b,
         type: 3}
       propertyPath: neighbourZones.Array.size
@@ -24732,6 +24832,11 @@ PrefabInstance:
       propertyPath: zoneModal
       value: 
       objectReference: {fileID: 491783575}
+    - target: {fileID: 6833276335317839387, guid: c426a7dfb7679694bbcf16c6d79fe46b,
+        type: 3}
+      propertyPath: threatLevel
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 6833276335317839387, guid: c426a7dfb7679694bbcf16c6d79fe46b,
         type: 3}
       propertyPath: neighbourZones.Array.size
@@ -26671,6 +26776,11 @@ PrefabInstance:
       objectReference: {fileID: 491783575}
     - target: {fileID: 6833276335317839387, guid: c426a7dfb7679694bbcf16c6d79fe46b,
         type: 3}
+      propertyPath: threatLevel
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6833276335317839387, guid: c426a7dfb7679694bbcf16c6d79fe46b,
+        type: 3}
       propertyPath: neighbourZones.Array.size
       value: 3
       objectReference: {fileID: 0}
@@ -27985,6 +28095,11 @@ PrefabInstance:
       objectReference: {fileID: 491783575}
     - target: {fileID: 6833276335317839387, guid: c426a7dfb7679694bbcf16c6d79fe46b,
         type: 3}
+      propertyPath: threatLevel
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6833276335317839387, guid: c426a7dfb7679694bbcf16c6d79fe46b,
+        type: 3}
       propertyPath: neighbourZones.Array.size
       value: 5
       objectReference: {fileID: 0}
@@ -29203,6 +29318,11 @@ PrefabInstance:
       propertyPath: zoneModal
       value: 
       objectReference: {fileID: 491783575}
+    - target: {fileID: 6833276335317839387, guid: c426a7dfb7679694bbcf16c6d79fe46b,
+        type: 3}
+      propertyPath: threatLevel
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 6833276335317839387, guid: c426a7dfb7679694bbcf16c6d79fe46b,
         type: 3}
       propertyPath: neighbourZones.Array.size
@@ -30430,6 +30550,11 @@ PrefabInstance:
       objectReference: {fileID: 491783575}
     - target: {fileID: 6833276335317839387, guid: c426a7dfb7679694bbcf16c6d79fe46b,
         type: 3}
+      propertyPath: threatLevel
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6833276335317839387, guid: c426a7dfb7679694bbcf16c6d79fe46b,
+        type: 3}
       propertyPath: neighbourZones.Array.size
       value: 2
       objectReference: {fileID: 0}
@@ -31090,6 +31215,11 @@ PrefabInstance:
       propertyPath: zoneModal
       value: 
       objectReference: {fileID: 491783575}
+    - target: {fileID: 6833276335317839387, guid: c426a7dfb7679694bbcf16c6d79fe46b,
+        type: 3}
+      propertyPath: threatLevel
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 6833276335317839387, guid: c426a7dfb7679694bbcf16c6d79fe46b,
         type: 3}
       propertyPath: neighbourZones.Array.size
@@ -32302,6 +32432,11 @@ PrefabInstance:
       objectReference: {fileID: 491783575}
     - target: {fileID: 6833276335317839387, guid: c426a7dfb7679694bbcf16c6d79fe46b,
         type: 3}
+      propertyPath: threatLevel
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6833276335317839387, guid: c426a7dfb7679694bbcf16c6d79fe46b,
+        type: 3}
       propertyPath: neighbourZones.Array.size
       value: 4
       objectReference: {fileID: 0}
@@ -33459,6 +33594,11 @@ PrefabInstance:
       propertyPath: zoneModal
       value: 
       objectReference: {fileID: 491783575}
+    - target: {fileID: 6833276335317839387, guid: c426a7dfb7679694bbcf16c6d79fe46b,
+        type: 3}
+      propertyPath: threatLevel
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 6833276335317839387, guid: c426a7dfb7679694bbcf16c6d79fe46b,
         type: 3}
       propertyPath: neighbourZones.Array.size
@@ -34761,6 +34901,11 @@ PrefabInstance:
       objectReference: {fileID: 491783575}
     - target: {fileID: 6833276335317839387, guid: c426a7dfb7679694bbcf16c6d79fe46b,
         type: 3}
+      propertyPath: threatLevel
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6833276335317839387, guid: c426a7dfb7679694bbcf16c6d79fe46b,
+        type: 3}
       propertyPath: neighbourZones.Array.size
       value: 4
       objectReference: {fileID: 0}
@@ -35466,6 +35611,11 @@ PrefabInstance:
       propertyPath: zoneModal
       value: 
       objectReference: {fileID: 491783575}
+    - target: {fileID: 6833276335317839387, guid: c426a7dfb7679694bbcf16c6d79fe46b,
+        type: 3}
+      propertyPath: threatLevel
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 6833276335317839387, guid: c426a7dfb7679694bbcf16c6d79fe46b,
         type: 3}
       propertyPath: neighbourZones.Array.size
@@ -36507,6 +36657,11 @@ PrefabInstance:
       propertyPath: zoneModal
       value: 
       objectReference: {fileID: 491783575}
+    - target: {fileID: 6833276335317839387, guid: c426a7dfb7679694bbcf16c6d79fe46b,
+        type: 3}
+      propertyPath: threatLevel
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 6833276335317839387, guid: c426a7dfb7679694bbcf16c6d79fe46b,
         type: 3}
       propertyPath: neighbourZones.Array.size
@@ -37753,6 +37908,11 @@ PrefabInstance:
       objectReference: {fileID: 491783575}
     - target: {fileID: 6833276335317839387, guid: c426a7dfb7679694bbcf16c6d79fe46b,
         type: 3}
+      propertyPath: threatLevel
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6833276335317839387, guid: c426a7dfb7679694bbcf16c6d79fe46b,
+        type: 3}
       propertyPath: neighbourZones.Array.size
       value: 2
       objectReference: {fileID: 0}
@@ -38516,6 +38676,11 @@ PrefabInstance:
       propertyPath: zoneModal
       value: 
       objectReference: {fileID: 491783575}
+    - target: {fileID: 6833276335317839387, guid: c426a7dfb7679694bbcf16c6d79fe46b,
+        type: 3}
+      propertyPath: threatLevel
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6833276335317839387, guid: c426a7dfb7679694bbcf16c6d79fe46b,
         type: 3}
       propertyPath: neighbourZones.Array.size
@@ -39346,6 +39511,11 @@ PrefabInstance:
       propertyPath: zoneModal
       value: 
       objectReference: {fileID: 491783575}
+    - target: {fileID: 6833276335317839387, guid: c426a7dfb7679694bbcf16c6d79fe46b,
+        type: 3}
+      propertyPath: threatLevel
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 6833276335317839387, guid: c426a7dfb7679694bbcf16c6d79fe46b,
         type: 3}
       propertyPath: neighbourZones.Array.size
@@ -40558,6 +40728,11 @@ PrefabInstance:
       objectReference: {fileID: 491783575}
     - target: {fileID: 6833276335317839387, guid: c426a7dfb7679694bbcf16c6d79fe46b,
         type: 3}
+      propertyPath: threatLevel
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6833276335317839387, guid: c426a7dfb7679694bbcf16c6d79fe46b,
+        type: 3}
       propertyPath: neighbourZones.Array.size
       value: 4
       objectReference: {fileID: 0}
@@ -41661,6 +41836,11 @@ PrefabInstance:
       propertyPath: zoneModal
       value: 
       objectReference: {fileID: 491783575}
+    - target: {fileID: 6833276335317839387, guid: c426a7dfb7679694bbcf16c6d79fe46b,
+        type: 3}
+      propertyPath: threatLevel
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 6833276335317839387, guid: c426a7dfb7679694bbcf16c6d79fe46b,
         type: 3}
       propertyPath: neighbourZones.Array.size
@@ -42938,6 +43118,11 @@ PrefabInstance:
       objectReference: {fileID: 491783575}
     - target: {fileID: 6833276335317839387, guid: c426a7dfb7679694bbcf16c6d79fe46b,
         type: 3}
+      propertyPath: threatLevel
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6833276335317839387, guid: c426a7dfb7679694bbcf16c6d79fe46b,
+        type: 3}
       propertyPath: neighbourZones.Array.size
       value: 5
       objectReference: {fileID: 0}
@@ -44156,6 +44341,11 @@ PrefabInstance:
       propertyPath: zoneModal
       value: 
       objectReference: {fileID: 491783575}
+    - target: {fileID: 6833276335317839387, guid: c426a7dfb7679694bbcf16c6d79fe46b,
+        type: 3}
+      propertyPath: threatLevel
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 6833276335317839387, guid: c426a7dfb7679694bbcf16c6d79fe46b,
         type: 3}
       propertyPath: neighbourZones.Array.size
@@ -46160,6 +46350,11 @@ PrefabInstance:
       objectReference: {fileID: 491783575}
     - target: {fileID: 6833276335317839387, guid: c426a7dfb7679694bbcf16c6d79fe46b,
         type: 3}
+      propertyPath: threatLevel
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6833276335317839387, guid: c426a7dfb7679694bbcf16c6d79fe46b,
+        type: 3}
       propertyPath: neighbourZones.Array.size
       value: 3
       objectReference: {fileID: 0}
@@ -46808,6 +47003,11 @@ PrefabInstance:
       propertyPath: zoneModal
       value: 
       objectReference: {fileID: 491783575}
+    - target: {fileID: 6833276335317839387, guid: c426a7dfb7679694bbcf16c6d79fe46b,
+        type: 3}
+      propertyPath: threatLevel
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 6833276335317839387, guid: c426a7dfb7679694bbcf16c6d79fe46b,
         type: 3}
       propertyPath: neighbourZones.Array.size
@@ -47780,6 +47980,11 @@ PrefabInstance:
       propertyPath: zoneModal
       value: 
       objectReference: {fileID: 491783575}
+    - target: {fileID: 6833276335317839387, guid: c426a7dfb7679694bbcf16c6d79fe46b,
+        type: 3}
+      propertyPath: threatLevel
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 6833276335317839387, guid: c426a7dfb7679694bbcf16c6d79fe46b,
         type: 3}
       propertyPath: neighbourZones.Array.size
