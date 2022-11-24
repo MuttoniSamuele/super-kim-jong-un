@@ -48004,6 +48004,6 @@ PrefabInstance:
         type: 3}
       propertyPath: neighbourZones.Array.data[2]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 847411206}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c426a7dfb7679694bbcf16c6d79fe46b, type: 3}
