@@ -39,7 +39,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -208, y: -136}
-  m_SizeDelta: {x: 165.8389, y: 71.9125}
+  m_SizeDelta: {x: 165.8389, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &9056422267394566041
 CanvasRenderer:
@@ -122,19 +122,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 9056422267394566040}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: MenuButton, Assembly-CSharp
-        m_MethodName: 
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 0
+      m_Calls: []
 --- !u!114 &2760540629150618766
 MonoBehaviour:
   m_ObjectHideFlags: 0
