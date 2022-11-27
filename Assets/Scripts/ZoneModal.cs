@@ -53,15 +53,19 @@ public class ZoneModal : MonoBehaviour {
 	}
 
 	public void OpenModal(MapZone zone, MapZone[] neighbourZones) {
+		if (isOpen) {
+			return;
+		}
+
 		zoneName.text = zone.zoneName;
 		threatLevel.text = zone.threatLevel.ToString();
-		MapZone[] unlockableZones = neighbourZones.Where(z => z != null && z.isLocked).ToArray();
+		MapZone[] unlockableZones = neighbourZones.Where(z => z != null && z.state == MapZone.State.Locked).ToArray();
 		if (unlockableZones.Length > 0) {
 			unlockedZones.text = string.Join(", ", unlockableZones.Select(z => z ? z.zoneName : "").ToArray());
 		} else {
 			unlockedZones.text = "None";
 		}
-		if (zone.isLocked) {
+		if (zone.state == MapZone.State.Locked) {
 			playButton.interactable = false;
 			playButtonText.text = "Locked";
 		} else {
@@ -70,7 +74,7 @@ public class ZoneModal : MonoBehaviour {
 		}
 
 		playButton.onClick.AddListener(() => {
-			zone.isCompleted = true;
+			zone.ChangeState(MapZone.State.Completed);
 			resetAnimation(false);
 		});
 		
