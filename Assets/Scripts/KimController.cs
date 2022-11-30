@@ -5,7 +5,8 @@ using UnityEngine;
 public class KimController : MonoBehaviour {
 	[SerializeField] private float moveSpeed;
 	[SerializeField] private float jumpSpeed;
-	[SerializeField] private float defaultFriction = 0.4f;
+	[SerializeField] private Transform groundCheckTransform;
+	[SerializeField] private Vector2 boxSize;
 
 	private Rigidbody2D rbody;
 	private Collider2D coll;
@@ -13,27 +14,27 @@ public class KimController : MonoBehaviour {
 
     void Start() {
 		rbody = gameObject.GetComponent<Rigidbody2D>();
-		coll = gameObject.GetComponent<Collider2D>();
-		matFriction = 0;//coll.sharedMaterial.friction;
 	}
 
     void FixedUpdate() {
 		Vector2 newVel = rbody.velocity;
-		bool moveLeft = Input.GetKey(KeyCode.LeftArrow);
-		bool moveRight = Input.GetKey(KeyCode.RightArrow);
+		bool moveLeft = Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A);
+		bool moveRight = Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D);
 
 		if (moveLeft == moveRight) {
 			newVel.x = 0;
-			rbody.sharedMaterial.friction = defaultFriction;
 		} else {
 			newVel.x = moveRight ? moveSpeed : -moveSpeed;
-			rbody.sharedMaterial.friction = matFriction;
 		}
 
-		if (Input.GetKey(KeyCode.UpArrow) && rbody.velocity.y == 0) {
+		if ((Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.Space)) && isGrounded()) {
 			newVel.y = jumpSpeed;
 		}
-
+		
 		rbody.velocity = newVel;
     }
+
+	bool isGrounded() {
+		return Physics2D.OverlapBoxAll(groundCheckTransform.position, boxSize, 0f).Length > 1;
+	}
 }

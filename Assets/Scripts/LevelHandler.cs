@@ -4,14 +4,10 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class LevelHandler : MonoBehaviour {
-	public static MapZone currentZone;
+	public static string currentZoneName;
 
 	[SerializeField] private Collider2D levelEndCollider;
 	[SerializeField] private float deathY;
-
-	void Start() {
-		
-	}
 
 	void Update() {
 		if (transform.position.y < deathY) {
@@ -27,7 +23,7 @@ public class LevelHandler : MonoBehaviour {
 
 	void exitLevel(bool hasWon) {
 		if (hasWon) {
-			currentZone.ChangeState(MapZone.State.Completed);
+			PlayerPrefs.SetInt(currentZoneName, (int) MapZone.State.Completed);
 		}
 		SceneManager.LoadScene("Map");
 	}

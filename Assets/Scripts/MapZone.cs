@@ -24,7 +24,7 @@ public class MapZone : MonoBehaviour {
 	void Start() {
 		spriteRenderer = GetComponent<SpriteRenderer>();
 		spriteRenderer.color = unlockedColor;
-		loadState();
+		state = loadState();
 	}
 
     void Update() {
@@ -75,8 +75,8 @@ public class MapZone : MonoBehaviour {
 		isClicked = false;
 	}
 
-	private void loadState() {
-		state = (State) PlayerPrefs.GetInt(zoneName, (int) (isLocked ? State.Locked : State.Unlocked));
+	private State loadState() {
+		return (State) PlayerPrefs.GetInt(zoneName, (int) (isLocked ? State.Locked : State.Unlocked));
 	}
 
 	public void ChangeState(State newState) {
