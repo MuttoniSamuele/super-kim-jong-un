@@ -10,11 +10,11 @@ public class KimController : MonoBehaviour {
 	[SerializeField] private Vector2 boxSize;
 
 	private Rigidbody2D rbody;
-	private Collider2D coll;
-	private float matFriction;
+	private SpriteRenderer sprite;
 
     void Start() {
 		rbody = gameObject.GetComponent<Rigidbody2D>();
+		sprite = gameObject.GetComponent<SpriteRenderer>();
 	}
 
     void FixedUpdate() {
@@ -26,6 +26,7 @@ public class KimController : MonoBehaviour {
 			newVel.x = 0;
 		} else {
 			newVel.x = moveRight ? moveSpeed : -moveSpeed;
+			sprite.flipX = moveLeft;
 		}
 
 		if ((Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.Space)) && isGrounded()) {

@@ -25,6 +25,13 @@ public class MapZone : MonoBehaviour {
 		spriteRenderer = GetComponent<SpriteRenderer>();
 		spriteRenderer.color = unlockedColor;
 		state = loadState();
+		if (state == State.Completed) {
+			foreach (MapZone zone in neighbourZones) {
+				if (zone && zone.state != State.Completed) {
+					zone.ChangeState(State.Unlocked);
+				}
+			}
+		}
 	}
 
     void Update() {
@@ -82,12 +89,5 @@ public class MapZone : MonoBehaviour {
 	public void ChangeState(State newState) {
 		state = newState;
 		PlayerPrefs.SetInt(zoneName, (int) state);
-		if (state == State.Completed) {
-			foreach (MapZone zone in neighbourZones) {
-				if (zone && zone.state != State.Completed) {
-					zone.ChangeState(State.Unlocked);
-				}
-			}
-		}
 	}
 }

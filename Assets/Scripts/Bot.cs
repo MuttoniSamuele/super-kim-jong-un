@@ -14,14 +14,14 @@ public class Bot : MonoBehaviour
     bool KimIsEntered = false;
     private float timeRemaining = 2;
 
-    // Start is called before the first frame update
-    void Start()
+	// Start is called before the first frame update
+	void Start()
     {
         rbody = gameObject.GetComponent<Rigidbody2D>();
-    }
+	}
 
-    // Update is called once per frame
-    void FixedUpdate()
+	// Update is called once per frame
+	void FixedUpdate()
     {
         Vector2 newVel = rbody.velocity;
         if (KimIsEntered)
@@ -62,7 +62,8 @@ public class Bot : MonoBehaviour
 
     void Fire()
     {
-        float time;
+		Vector3 scale = transform.localScale;
+		float time;
         if (Mathf.Abs(Mathf.Abs(Kim.transform.position.x) - Mathf.Abs(transform.position.x)) < 0.1 && Mathf.Abs(Mathf.Abs(Kim.transform.position.x) - Mathf.Abs(transform.position.x)) > -0.1) 
         {
             Velocity1 = 0;
@@ -70,7 +71,9 @@ public class Bot : MonoBehaviour
         }
         else if (Kim.transform.position.x > transform.position.x)
         {
-            Velocity1 = Velocity + 2;
+			scale.x = Mathf.Abs(scale.x) * -1;
+			transform.localScale = scale;
+			Velocity1 = Velocity + 2;
             if(Kim.transform.position.x - transform.position.x>0)
             {
                 time = (Kim.transform.position.x - transform.position.x) / 4;
@@ -79,7 +82,9 @@ public class Bot : MonoBehaviour
         }
         else if (Kim.transform.position.x < transform.position.x)
         {
-            Velocity1 = -Velocity - 2;
+			scale.x = Mathf.Abs(scale.x);
+			transform.localScale = scale;
+			Velocity1 = -Velocity - 2;
             if (transform.position.x - Kim.transform.position.x > 0)
             {
                 time = (transform.position.x - Kim.transform.position.x) / 4;
@@ -108,9 +113,10 @@ public class Bot : MonoBehaviour
         newVel1.x = +Velocity1;
         newVel1.y = Velocity2;
         bullet.GetComponent<Rigidbody2D>().velocity = newVel1;
+        bullet.GetComponent<SpriteRenderer>().flipX = newVel1.x > 0;
 
-        // Destroy the bullet after 2 seconds
-        Destroy(bullet, 5);
+		// Destroy the bullet after 2 seconds
+		Destroy(bullet, 5);
     }
 
     void OnTriggerEnter2D(Collider2D col)

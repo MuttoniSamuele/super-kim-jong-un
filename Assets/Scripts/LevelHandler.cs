@@ -19,9 +19,19 @@ public class LevelHandler : MonoBehaviour {
 		if (coll == levelEndCollider) {
 			exitLevel(true);
 		}
+		if (coll.gameObject.tag == "Bullet") {
+			exitLevel(false);
+		}
+	}
+
+	void OnCollisionEnter2D(Collision2D collision) {
+		if (collision.gameObject.tag == "Bot") {
+			exitLevel(false);
+		}
 	}
 
 	void exitLevel(bool hasWon) {
+		return;
 		if (hasWon) {
 			PlayerPrefs.SetInt(currentZoneName, (int) MapZone.State.Completed);
 		}
