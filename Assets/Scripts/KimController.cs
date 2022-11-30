@@ -5,6 +5,7 @@ using UnityEngine;
 public class KimController : MonoBehaviour {
 	[SerializeField] private float moveSpeed;
 	[SerializeField] private float jumpSpeed;
+	[SerializeField] private Collider2D groundColl;
 	[SerializeField] private Transform groundCheckTransform;
 	[SerializeField] private Vector2 boxSize;
 
@@ -35,6 +36,12 @@ public class KimController : MonoBehaviour {
     }
 
 	bool isGrounded() {
-		return Physics2D.OverlapBoxAll(groundCheckTransform.position, boxSize, 0f).Length > 1;
+		Collider2D[] colls = Physics2D.OverlapBoxAll(groundCheckTransform.position, boxSize, 0f);
+		foreach (Collider2D coll in colls) {
+			if (coll == groundColl) {
+				return true;
+			}
+		}
+		return false;
 	}
 }
