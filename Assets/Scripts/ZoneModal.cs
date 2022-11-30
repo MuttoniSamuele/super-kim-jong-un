@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class ZoneModal : MonoBehaviour {
 	[SerializeField] private Text zoneName;
@@ -52,11 +53,15 @@ public class ZoneModal : MonoBehaviour {
 		t = 0f;
 	}
 
+	private void loadLevel(MapZone zone) {
+		LevelHandler.currentZone = zone;
+		SceneManager.LoadScene("Level");
+	}
+
 	public void OpenModal(MapZone zone, MapZone[] neighbourZones) {
 		if (isOpen) {
 			return;
 		}
-
 		zoneName.text = zone.zoneName;
 		threatLevel.text = zone.threatLevel.ToString();
 		MapZone[] unlockableZones = neighbourZones.Where(z => z != null && z.state == MapZone.State.Locked).ToArray();
@@ -72,12 +77,9 @@ public class ZoneModal : MonoBehaviour {
 			playButton.interactable = true;
 			playButtonText.text = "Play";
 		}
-
 		playButton.onClick.AddListener(() => {
-			zone.ChangeState(MapZone.State.Completed);
-			resetAnimation(false);
+			loadLevel(zone);
 		});
-		
 		resetAnimation(true);
 	}
 

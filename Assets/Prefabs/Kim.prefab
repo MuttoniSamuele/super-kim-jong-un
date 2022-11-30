@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 8877278122581740969}
   - component: {fileID: 8877278122581740968}
   - component: {fileID: 8877278122581740971}
+  - component: {fileID: 8361024043521040223}
   m_Layer: 0
   m_Name: Kim
   m_TagString: Untagged
@@ -149,3 +150,17 @@ MonoBehaviour:
   moveSpeed: 7
   jumpSpeed: 12
   defaultFriction: 0.4
+--- !u!114 &8361024043521040223
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8877278122581740972}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8bf69ea1e5e0de48b617f272ed290bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelEndCollider: {fileID: 0}
+  deathY: -5.5
