@@ -31,7 +31,6 @@ public class LevelHandler : MonoBehaviour {
 	}
 
 	void exitLevel(bool hasWon) {
-		return;
 		if (hasWon) {
 			PlayerPrefs.SetInt(currentZoneName, (int) MapZone.State.Completed);
 		}
