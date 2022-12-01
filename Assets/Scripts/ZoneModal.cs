@@ -53,8 +53,8 @@ public class ZoneModal : MonoBehaviour {
 		t = 0f;
 	}
 
-	private void loadLevel(string zoneName) {
-		LevelHandler.currentZoneName = zoneName;
+	private void loadLevel(MapZone zone) {
+		LevelHandler.currentZone = zone;
 		SceneManager.LoadScene("Level");
 	}
 
@@ -78,7 +78,7 @@ public class ZoneModal : MonoBehaviour {
 			playButtonText.text = "Play";
 		}
 		playButton.onClick.AddListener(() => {
-			loadLevel(zone.zoneName);
+			loadLevel(zone);
 		});
 		resetAnimation(true);
 	}
